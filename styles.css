@@ -1,0 +1,146 @@
+/* Reset de margenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body{
+    font-family: Arial; sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/*body{
+    background-image: url(fondo1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #f4f4f4;
+}
+
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #ffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 1rem;
+}
+
+nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Secciones */
+section{
+    padding: 2rem 1rem;
+}
+
+#about, #contact{
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+#portafolio .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.75rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* animacion aparicion desde la iz*/
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* aplicar animacionesa los titulos de las secciones*/
+
+section h2 {
+    animation: slideIn 0.8s ease-out;
+}
